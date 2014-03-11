@@ -57,5 +57,23 @@ namespace TaskyAndroid.Screens {
 			//Hook up our adapter to our ListView
 			taskListView.Adapter = taskList;
 		}
+
+		public override void OnBackPressed ()
+		{
+			base.OnBackPressed ();
+			this.OverridePendingTransition (Resource.Animation.slide_in_right, Resource.Animation.slide_out_right);
+		}
+
+		public override void StartActivity (Intent intent)
+		{
+			base.StartActivity (intent);
+			this.OverridePendingTransition (Resource.Animation.slide_in_right, Resource.Animation.slide_out_right);
+		}
+
+		public override void Finish ()
+		{
+			base.Finish ();
+			this.OverridePendingTransition (Resource.Animation.slide_in_right, Resource.Animation.slide_out_right);
+		}
 	}
 }

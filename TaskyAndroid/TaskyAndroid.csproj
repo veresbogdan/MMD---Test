@@ -59,12 +59,18 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\layout\TaskListItem.axml" />
-    <AndroidResource Include="Resources\layout\HomeScreen.axml" />
+    <AndroidResource Include="Resources\layout\HomeScreen.axml">
+      <Gettext-ScanForTranslations>False</Gettext-ScanForTranslations>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\TaskDetails.axml" />
     <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-ldpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\anim\slide_in_left.xml" />
+    <AndroidResource Include="Resources\anim\slide_in_right.xml" />
+    <AndroidResource Include="Resources\anim\slide_out_left.xml" />
+    <AndroidResource Include="Resources\anim\slide_out_right.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -74,6 +80,7 @@
     <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-ldpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\anim\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tasky.Core\Tasky.Core.Android.csproj">

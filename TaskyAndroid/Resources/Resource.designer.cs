@@ -28,6 +28,31 @@ namespace TaskyAndroid
 		{
 		}
 		
+		public partial class Animation
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int slide_in_left = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int slide_in_right = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int slide_out_left = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int slide_out_right = 2130968579;
+			
+			static Animation()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Animation()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -47,6 +72,9 @@ namespace TaskyAndroid
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
 			
+			// aapt resource value: 0x7f020001
+			public const int monoandroidsplash = 2130837505;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -60,35 +88,35 @@ namespace TaskyAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int AddButton = 2131034112;
+			// aapt resource value: 0x7f070000
+			public const int AddButton = 2131165184;
 			
-			// aapt resource value: 0x7f050008
-			public const int CancelDeleteButton = 2131034120;
+			// aapt resource value: 0x7f070008
+			public const int CancelDeleteButton = 2131165192;
 			
-			// aapt resource value: 0x7f050003
-			public const int NameLabel = 2131034115;
+			// aapt resource value: 0x7f070003
+			public const int NameLabel = 2131165187;
 			
-			// aapt resource value: 0x7f050004
-			public const int NameText = 2131034116;
+			// aapt resource value: 0x7f070004
+			public const int NameText = 2131165188;
 			
-			// aapt resource value: 0x7f050005
-			public const int NotesLabel = 2131034117;
+			// aapt resource value: 0x7f070005
+			public const int NotesLabel = 2131165189;
 			
-			// aapt resource value: 0x7f050006
-			public const int NotesText = 2131034118;
+			// aapt resource value: 0x7f070006
+			public const int NotesText = 2131165190;
 			
-			// aapt resource value: 0x7f050007
-			public const int SaveButton = 2131034119;
+			// aapt resource value: 0x7f070007
+			public const int SaveButton = 2131165191;
 			
-			// aapt resource value: 0x7f050002
-			public const int TaskDetailsHeader = 2131034114;
+			// aapt resource value: 0x7f070002
+			public const int TaskDetailsHeader = 2131165186;
 			
-			// aapt resource value: 0x7f050001
-			public const int TaskList = 2131034113;
+			// aapt resource value: 0x7f070001
+			public const int TaskList = 2131165185;
 			
-			// aapt resource value: 0x7f050009
-			public const int lstItemTask = 2131034121;
+			// aapt resource value: 0x7f070009
+			public const int lstItemTask = 2131165193;
 			
 			static Id()
 			{
@@ -125,11 +153,11 @@ namespace TaskyAndroid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int app_name = 2131034113;
 			
-			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int hello = 2131034112;
 			
 			static String()
 			{
@@ -137,6 +165,22 @@ namespace TaskyAndroid
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int Mono_Android_Theme_Splash = 2131099648;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

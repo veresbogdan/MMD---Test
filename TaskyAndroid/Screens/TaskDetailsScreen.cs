@@ -10,7 +10,7 @@ namespace TaskyAndroid.Screens {
 	/// View/edit a Task
 	/// </summary>
 	[Activity (Label = "TaskDetailsScreen")]			
-	public class TaskDetailsScreen : Activity {
+	public class TaskDetailsScreen : BaseActivity {
 		Task task = new Task();
 		Button cancelDeleteButton;
 		EditText notesTextEdit;
@@ -60,24 +60,6 @@ namespace TaskyAndroid.Screens {
 				TaskManager.DeleteTask(task.ID);
 			}
 			Finish();
-		}
-
-		public override void OnBackPressed ()
-		{
-			base.OnBackPressed ();
-			this.OverridePendingTransition (Resource.Animation.slide_in_left, Resource.Animation.slide_out_left);
-		}
-
-		public override void StartActivity (Intent intent)
-		{
-			base.StartActivity (intent);
-			this.OverridePendingTransition (Resource.Animation.slide_in_left, Resource.Animation.slide_out_left);
-		}
-
-		public override void Finish ()
-		{
-			base.Finish ();
-			this.OverridePendingTransition (Resource.Animation.slide_in_left, Resource.Animation.slide_out_left);
 		}
 	}
 }

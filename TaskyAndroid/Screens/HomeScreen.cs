@@ -11,7 +11,7 @@ namespace TaskyAndroid.Screens {
 	/// Main ListView screen displays a list of tasks, plus an [Add] button
 	/// </summary>
 	[Activity (Label = "Tasky", MainLauncher = true, Icon="@drawable/icon")]			
-	public class HomeScreen : Activity {
+	public class HomeScreen : BaseActivity {
 		Adapters.TaskListAdapter taskList;
 		IList<Task> tasks;
 		Button addTaskButton;
@@ -56,24 +56,6 @@ namespace TaskyAndroid.Screens {
 
 			//Hook up our adapter to our ListView
 			taskListView.Adapter = taskList;
-		}
-
-		public override void OnBackPressed ()
-		{
-			base.OnBackPressed ();
-			this.OverridePendingTransition (Resource.Animation.slide_in_right, Resource.Animation.slide_out_right);
-		}
-
-		public override void StartActivity (Intent intent)
-		{
-			base.StartActivity (intent);
-			this.OverridePendingTransition (Resource.Animation.slide_in_right, Resource.Animation.slide_out_right);
-		}
-
-		public override void Finish ()
-		{
-			base.Finish ();
-			this.OverridePendingTransition (Resource.Animation.slide_in_right, Resource.Animation.slide_out_right);
 		}
 	}
 }
